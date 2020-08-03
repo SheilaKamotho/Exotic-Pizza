@@ -15,11 +15,11 @@ $(document).ready(function() {
     var deliveryPrice = 0;
     $('#checkout').click(function() {
         var checkValue = document.getElementById('delivery').value;
-        if (checkValue === 'yes') {
+        if (checkValue === '200') {
             deliveryPrice += 200;
             var location = prompt('Say your location:');
             alert('Delivery Price is Ksh' + deliveryPrice)
-            alert('pizza will be delivered at' + ' ' + location);
+            alert('Pizza will be delivered at' + ' ' + location);
         }     
     });
 })    
