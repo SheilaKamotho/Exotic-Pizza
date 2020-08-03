@@ -75,11 +75,19 @@
     <input class="col-md-2" type ="number" id ="number" placeholder="Quantity" min=1 max= 35><br>
     <label for ="delivery">Delivery</label><br>
     <select class="col-md-2" id="delivery">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
+      <option value="200">Yes</option>
+      <option value="0">No</option>
     </select><br>
-    <button type= "my button" class="col-md-2" onclick="checkout()">ORDER</button>
+    <button type= "my button" class="col-md-2" id="checkout" onclick="checkout()">ORDER</button>
   </form>
+  <div id="summary" class="summary">
+    <h2>See your order:</h2>
+    <h4>Pizza size: Ksh <span id="seeYourSizeChoice"></span></h4>
+    <h4>Pizza crust: Ksh<span id="seeYourCrustChoice"></span></h4>
+    <h4>Pizza toppings: Ksh<span id="seeYourToppingsChoice"></span></h4>
+    <h4>Pizza quantity: Ksh<span id="seeYourQuantityChoice"></span></h4>
+    <h2 id="displayTotal">TOTAL</h2>
+</div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src= "js/scripts.js"></script> 
