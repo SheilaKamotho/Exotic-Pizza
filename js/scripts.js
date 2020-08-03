@@ -8,6 +8,10 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
+    $('#scroll').hide();
+})    
+
+$(document).ready(function() {
     $('#summary').hide();
 })
 
@@ -40,6 +44,7 @@ $('form#pizza').submit(function(event) {
     document.getElementById('seeYourQuantityChoice').innerHTML = pizzaQuantity;
     document.getElementById('seeYourDeliveryChoice').innerHTML = pizzaDelivery;
     $('#summary').show();
+    $('#scroll').show();
 
     event.preventDefault();
 });
